@@ -9,7 +9,7 @@ export default {
     clientId: CLIENT_ID,
     issuer: ISSUER,
     redirectUri: REDIRECT_URI,
-    scopes: ['openid', 'profile', 'email'],
+    scopes: ['openid', 'profile', 'email', 'legacy_permissions'],
     pkce: true,
     disableHttpsCheck: OKTA_TESTING_DISABLEHTTPSCHECK,
   },

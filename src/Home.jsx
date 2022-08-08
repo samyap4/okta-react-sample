@@ -33,6 +33,10 @@ const Home = () => {
     await oktaAuth.signInWithRedirect();
   };
 
+  const redirect = () => {
+    window.open('https://login.sam-yap.com/home/zendesk/0oa61tn3bkNzcLVlt5d7/238', '_blank');
+  }
+
   const resourceServerExamples = [
     {
       label: 'Node/Express Resource Server Example',
@@ -78,7 +82,7 @@ const Home = () => {
             {' '}
             page to take a look inside the ID token.
           </p>
-          <h3>Next Steps</h3>
+          {/* <h3>Next Steps</h3>
           <p>Currently this application is a stand-alone front end application.  At this point you can use the access token to authenticate yourself against resource servers that you control.</p>
           <p>This sample is designed to work with one of our resource server examples.  To see access token authentication in action, please download one of these resource server examples:</p>
           <ul>
@@ -90,7 +94,10 @@ const Home = () => {
             <a href="/messages">My Messages</a>
             {' '}
             page to see the authentication process in action.
-          </p>
+          </p> */}
+          <h3>Need Help? Open a Ticket Below</h3>
+          <Button id="sso" primary onClick={redirect}>Zendesk</Button>
+          
         </div>
         )}
 
