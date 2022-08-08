@@ -21,7 +21,7 @@ import Messages from './Messages';
 import Navbar from './Navbar';
 import Profile from './Profile';
 
-const oktaAuth = new OktaAuth(config.oidc);
+const oktaAuth = new OktaAuth(config.oidc); 
 
 const App = () => {
   const history = useHistory();
