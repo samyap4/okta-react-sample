@@ -1,7 +1,7 @@
 const CLIENT_ID = process.env.CLIENT_ID || '{clientId}';
 const ISSUER = process.env.ISSUER || 'https://{yourOktaDomain}/oauth2/default';
 const OKTA_TESTING_DISABLEHTTPSCHECK = process.env.OKTA_TESTING_DISABLEHTTPSCHECK || false;
-const REDIRECT_URI = `${window.location.origin}`;
+const REDIRECT_URI = `${window.location.origin}/login/callback`;
 
 // eslint-disable-next-line
 export default {
