@@ -22,6 +22,7 @@ import Navbar from './Navbar';
 import Profile from './Profile';
 
 const oktaAuth = new OktaAuth(config.oidc); 
+// Powered by Vercel
 
 const App = () => {
   const history = useHistory();
