@@ -24,8 +24,12 @@ const Home = () => {
     await oktaAuth.signInWithRedirect();
   };
 
-  const redirect = () => {
+  const redirectToZendesk = () => {
     window.open('https://login.sam-yap.com/home/zendesk/0oa61tn3bkNzcLVlt5d7/238', '_blank');
+  }
+
+  const redirectToDemo0 = () => {
+    window.open('https://login.sam-yap.com/home/dev-04086425_auth0samyapkowitzsaml_1/0oa5hk0pjzRi9Zy675d7/aln5hk9w1aIGNggwH5d7', '_blank');
   }
 
   const resourceServerExamples = [
@@ -65,8 +69,8 @@ const Home = () => {
             {userInfo.name}
             !
           </p>
-          <Button id="sso" primary onClick={redirect}>Zendesk SSO</Button>
-          
+          <Button id="sso-custom" primary onClick={redirectToDemo0}>Partner App</Button>
+          <Button id="sso" primary onClick={redirectToZendesk}>Need help?</Button>
           <br></br>
           <br></br>
           <Profile></Profile>
