@@ -38,7 +38,7 @@ const App = () => {
         <Switch>
           <Route path="/" exact={true} component={Home}/>
           <Route path="/login/callback" component={LoginCallback}/>
-          <Route path="/sso" component={SSO}/>
+          <Route path="/sso/callback" component={SSO}/>
           <SecureRoute path="/messages" component={Messages}/>
           <SecureRoute path="/profile" component={Profile}/>
         </Switch>
