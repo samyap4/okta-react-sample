@@ -54,6 +54,9 @@ const Home = () => {
   }
 
   const brand = window.location.hostname.includes('redwave') ? 'Red Wave' : 'Blue Ocean';
+  useEffect(() => {
+    document.title = brand;
+  }, []);
 
   return (
     <div>
