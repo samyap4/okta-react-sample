@@ -53,10 +53,12 @@ const Home = () => {
     );
   }
 
+  const brand = window.location.hostname.includes('redwave') ? 'Red Wave' : 'Blue Ocean';
+
   return (
     <div>
       <div>
-        <Header as="h1">Okta Demo App</Header>
+        <Header as="h1">Okta Demo App: {brand}</Header>
 
         { authState.isAuthenticated && !userInfo
         && <div>Loading user information...</div>}
