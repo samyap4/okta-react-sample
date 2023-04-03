@@ -12,3 +12,4 @@ samples-java-spring
 yalc.lock
 .eslintcache
 .vercel
+*.env

@@ -8,8 +8,10 @@ import Profile from './Profile';
 const Home = () => {
   const { authState, oktaAuth } = useOktaAuth();
   const [userInfo, setUserInfo] = useState(null);
+  const brand = window.location.hostname.includes('redwave') ? 'Red Wave' : 'Blue Ocean';
 
   useEffect(() => {
+    document.title = brand;
     if (!authState || !authState.isAuthenticated) {
       // When user isn't authenticated, forget any user info
       setUserInfo(null);
@@ -52,11 +54,6 @@ const Home = () => {
       <div>Loading...</div>
     );
   }
-
-  const brand = window.location.hostname.includes('redwave') ? 'Red Wave' : 'Blue Ocean';
-  useEffect(() => {
-    document.title = brand;
-  }, []);
 
   return (
     <div>
