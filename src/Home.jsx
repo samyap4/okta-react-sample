@@ -3,8 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Button, Header } from 'semantic-ui-react';
 import Profile from './Profile';
 
-//Powered by Vercel
-
 const Home = () => {
   const { authState, oktaAuth } = useOktaAuth();
   const [userInfo, setUserInfo] = useState(null);
