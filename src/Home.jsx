@@ -25,11 +25,12 @@ const Home = () => {
   };
 
   const redirectToZendesk = () => {
-    window.open('https://login.sam-yap.com/home/zendesk/0oa61tn3bkNzcLVlt5d7/238', '_blank');
+    window.open('https://login.samyap.dev/home/zendesk/0oa61tn3bkNzcLVlt5d7/238', '_blank');
   }
 
   const redirectToDemo0 = () => {
-    window.open('https://login.sam-yap.com/home/dev-04086425_auth0samyapkowitzsaml_1/0oa5hk0pjzRi9Zy675d7/aln5hk9w1aIGNggwH5d7', '_blank');
+    //window.open('https://login.sam-yap.com/home/dev-04086425_auth0samyapkowitzsaml_1/0oa5hk0pjzRi9Zy675d7/aln5hk9w1aIGNggwH5d7', '_blank');
+    window.open('https://login.samyap.dev/app/dev-04086425_auth0samyapkowitzsaml_1/exk5hk0pjwsgpYnvC5d7/sso/saml', '_blank');
   }
 
   const resourceServerExamples = [
